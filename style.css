@@ -1,0 +1,331 @@
+/* color palette créée par Color Picker
+CSS HEX
+--dark-cornflower-blue: #27488Bff;
+--light-steel-blue: #AEBDCFff;
+--camel: #A98F59ff;
+--cafe-noir: #4B3425ff;
+--light-steel-blue-2: #AEBDCFff;
+
+CSS HSL
+--dark-cornflower-blue: hsla(220, 56%, 35%, 1);
+--light-steel-blue: hsla(213, 26%, 75%, 1);
+--camel: hsla(41, 32%, 51%, 1);
+--cafe-noir: hsla(24, 34%, 22%, 1);
+--light-steel-blue-2: hsla(213, 26%, 75%, 1);
+
+SCSS HEX
+$dark-cornflower-blue: #27488Bff;
+$light-steel-blue: #AEBDCFff;
+$camel: #A98F59ff;
+$cafe-noir: #4B3425ff;
+$light-steel-blue-2: #AEBDCFff;
+
+SCSS HSL
+$dark-cornflower-blue: hsla(220, 56%, 35%, 1);
+$light-steel-blue: hsla(213, 26%, 75%, 1);
+$camel: hsla(41, 32%, 51%, 1);
+$cafe-noir: hsla(24, 34%, 22%, 1);
+$light-steel-blue-2: hsla(213, 26%, 75%, 1);
+
+SCSS RGB
+$dark-cornflower-blue: rgba(39, 72, 139, 1);
+$light-steel-blue: rgba(174, 189, 207, 1);
+$camel: rgba(169, 143, 89, 1);
+$cafe-noir: rgba(75, 52, 37, 1);
+$light-steel-blue-2: rgba(174, 189, 207, 1);
+
+SCSS Gradient
+$gradient-top: linear-gradient(0deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
+$gradient-right: linear-gradient(90deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
+$gradient-bottom: linear-gradient(180deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
+$gradient-left: linear-gradient(270deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
+$gradient-top-right: linear-gradient(45deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
+$gradient-bottom-right: linear-gradient(135deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
+$gradient-top-left: linear-gradient(225deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
+$gradient-bottom-left: linear-gradient(315deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
+$gradient-radial: radial-gradient(#27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff); */
+
+@font-face
+{
+	font-family: 'MyriadPro-Light';
+	src: url('MyriadPro-Light.otf');
+}
+
+*{
+  /* margin: 0;
+  padding: 0; */
+  font-family: 'MyriadPro-Light', Arial, serif;
+ }
+
+/*header
+{
+	background-color: white;
+	background-size: cover;
+	color: white;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}*/
+
+/*#bloc_page
+{
+	width: 100%;
+	margin: auto;
+}*/
+
+/*section h1, footer h1, nav a
+{
+	font-family: Dayrom, serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}*/
+
+h2
+{
+	color: #A98F59ff;
+}
+
+.nav-item
+{
+	font-size: 20px;
+}
+
+em
+{
+	font-style: normal;
+	font-weight: bold;
+}
+
+#bienvenue
+{
+	font-size: 200%;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+}
+
+/*section, footer, header
+{
+	border: 5px solid red;
+	width: 100%;
+}*/
+
+section
+{
+	overflow: hidden;
+}
+
+/*nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+nav li
+{
+	margin-right: 15px;
+}
+
+nav a
+{
+	font-size: 1,3em;
+	color: #760001; couleur rouge foncé de OCC
+	color: #004666;
+	padding-bottom: 3px;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	border-bottom: 3px solid #004666;
+}*/
+
+#banniere_image
+{
+	margin-top: 15px;
+	height: 200px;
+	border-radius: 5px;
+	background: url("massif_du_sancy.jpeg") no-repeat;
+	position: relative;
+	box-shadow: 0px 4px 4px #1c1a19;
+	margin-bottom: 25px;
+	color: white;
+	display: flex;
+	background-position: 50% 35%;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+footer
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+#chambre_double_rdj
+{
+	background-image: url(20200803_210354.jpg);
+}
+
+#chambre_double_rdc
+{
+	background-image: url(20200803_214517.jpg)
+}
+
+#chambre_double_mezzanine
+{
+	background-image: url(20160812_183018.jpg);
+}
+
+#chambre_double_rdj, #chambre_double_rdc, #chambre_double_mezzanine, #chambre_2litssup_rdj, #chambre_2litssup_rdc,
+#chambre_2lits_rdc, #salon, #salle_a_manger, #salle_douche, #cuisine, #salle_bain, #toilettes, #salle_jeux, #entrée
+{
+	height: 180px; width: 300px; background-size: cover;
+}
+
+#chambre_2litssup_rdj
+{
+	background-image: url(20160812_190231.jpg);
+}
+
+#chambre_2litssup_rdc
+{
+	background-image: url(20200803_215208.jpg);
+}
+
+#chambre_2lits_rdc
+{
+	background-image: url(20160812_181058.jpg);
+}
+
+#salon
+{
+	background-image: url(20160812_185757.jpg);
+}
+
+#salle_a_manger
+{
+	background-image: url(20151230_135504.jpg);
+}
+
+#salle_douche
+{
+	background-image: url(20181029_103358.jpg)
+}
+
+#cuisine
+{
+	background-image: url(20181029_102921.jpg);
+}
+
+#salle_bain
+{
+	background-image: url(20200803_214807.jpg);
+	background-position: center;
+}
+
+#toilettes
+{
+	background-image: url(20200803_215132.jpg);
+	background-position: center;
+}
+
+#salle_jeux
+{
+	background-image: url(20160812_182628.jpg);
+}
+
+#entrée
+{
+	background-image: url(20200803_214106.jpg);
+}
+
+#photo_accueil
+{
+	height: 600px;
+	background-image: url("Succession chalets jusqu'aux pistes de ski.jpg");
+	background-size: cover;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.button
+{
+	display: block;
+	border-radius: 30px;
+	background-color: #A98F59ff;
+	color: white;
+	padding: 10px 34px;
+	font-size: 20px;
+	position: absolute;
+	top: 70%;
+	left: 75%;
+}
+
+.grid-container
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	/*background-color: 2196F3;*/
+	grid-gap: 50px;
+}
+
+#hiver, #été
+{
+	height: 500px;
+	background-size: cover;
+}
+
+#hiver
+{
+	background-image: url(OTSancy_12631.jpg);
+}
+
+#été
+{
+	background-image: url(OTSancy_2374.jpg);
+}
+
+.grid-item
+{
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.grid-container-2
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: 2196F3;
+	grid-gap: 50px;
+	border: 5px solid red;
+}
+
+.grid-item-2
+{
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+#chambres
+{
+	grid-column: 1 / span 3;
+	text-align: center;
+}
+
+.visite
+{
+	display: grid;
+	justify-content: space-around;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px;
+	/*background-color: #2196F3;*/
+	padding: 10px;
+}
+
+.visite > div
+{
+	/*background-color: rgba(255,255,255,0.8);*/
+	text-align: center;
+	padding: 20px 0;
+}
+
+
