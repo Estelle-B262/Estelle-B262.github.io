@@ -4,46 +4,7 @@ CSS HEX
 --light-steel-blue: #AEBDCFff;
 --camel: #A98F59ff;
 --cafe-noir: #4B3425ff;
---light-steel-blue-2: #AEBDCFff;
-
-CSS HSL
---dark-cornflower-blue: hsla(220, 56%, 35%, 1);
---light-steel-blue: hsla(213, 26%, 75%, 1);
---camel: hsla(41, 32%, 51%, 1);
---cafe-noir: hsla(24, 34%, 22%, 1);
---light-steel-blue-2: hsla(213, 26%, 75%, 1);
-
-SCSS HEX
-$dark-cornflower-blue: #27488Bff;
-$light-steel-blue: #AEBDCFff;
-$camel: #A98F59ff;
-$cafe-noir: #4B3425ff;
-$light-steel-blue-2: #AEBDCFff;
-
-SCSS HSL
-$dark-cornflower-blue: hsla(220, 56%, 35%, 1);
-$light-steel-blue: hsla(213, 26%, 75%, 1);
-$camel: hsla(41, 32%, 51%, 1);
-$cafe-noir: hsla(24, 34%, 22%, 1);
-$light-steel-blue-2: hsla(213, 26%, 75%, 1);
-
-SCSS RGB
-$dark-cornflower-blue: rgba(39, 72, 139, 1);
-$light-steel-blue: rgba(174, 189, 207, 1);
-$camel: rgba(169, 143, 89, 1);
-$cafe-noir: rgba(75, 52, 37, 1);
-$light-steel-blue-2: rgba(174, 189, 207, 1);
-
-SCSS Gradient
-$gradient-top: linear-gradient(0deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
-$gradient-right: linear-gradient(90deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
-$gradient-bottom: linear-gradient(180deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
-$gradient-left: linear-gradient(270deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
-$gradient-top-right: linear-gradient(45deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
-$gradient-bottom-right: linear-gradient(135deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
-$gradient-top-left: linear-gradient(225deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
-$gradient-bottom-left: linear-gradient(315deg, #27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff);
-$gradient-radial: radial-gradient(#27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #AEBDCFff); */
+--light-steel-blue-2: #AEBDCFff;*/
 
 @font-face
 {
@@ -57,32 +18,20 @@ $gradient-radial: radial-gradient(#27488Bff, #AEBDCFff, #A98F59ff, #4B3425ff, #A
   font-family: 'MyriadPro-Light', Arial, serif;
  }
 
-/*header
+body
 {
-	background-color: white;
-	background-size: cover;
-	color: white;
-	display: flex;
-	justify-content: flex-end;
-	width: 100%;
-}*/
+	padding-top: 60px;
+}
 
-/*#bloc_page
-{
-	width: 100%;
-	margin: auto;
-}*/
-
-/*section h1, footer h1, nav a
-{
-	font-family: Dayrom, serif;
-	font-weight: normal;
-	text-transform: uppercase;
-}*/
+#visite, #ecologie, #calendrier, #carte, #contact{
+	padding-top: 80px;
+	margin-top: -60px;
+}
 
 h2
 {
 	color: #A98F59ff;
+
 }
 
 .nav-item
@@ -114,31 +63,6 @@ section
 {
 	overflow: hidden;
 }
-
-/*nav ul
-{
-	list-style-type: none;
-	display: flex;
-}
-
-nav li
-{
-	margin-right: 15px;
-}
-
-nav a
-{
-	font-size: 1,3em;
-	color: #760001; couleur rouge foncé de OCC
-	color: #004666;
-	padding-bottom: 3px;
-	text-decoration: none;
-}
-
-nav a:hover
-{
-	border-bottom: 3px solid #004666;
-}*/
 
 #banniere_image
 {
@@ -242,11 +166,22 @@ footer
 
 #photo_accueil
 {
-	height: 600px;
+	height: 700px;
 	background-image: url("Succession chalets jusqu'aux pistes de ski.jpg");
 	background-size: cover;
 	position: relative;
 	margin-bottom: 50px;
+	font-weight: bold;
+}
+
+.topleft {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	font-size: 20px;
+	color: white;
+	padding-top: 50px;
+	padding-left: 50px;
 }
 
 .button
@@ -328,4 +263,17 @@ footer
 	padding: 20px 0;
 }
 
+#frame
+{
+	text-align: center;
+}
 
+#marge_gauche{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+hr.hr_titre{
+	border: 2px solid;
+	opacity: 1;
+}

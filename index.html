@@ -1,35 +1,32 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		
+
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
 		<script src="https://kit.fontawesome.com/d90cb6a55a.js" crossorigin="anonymous"></script>
+	
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Chalet 6 chambres à Super-Besse</title>
 	</head>
 
 	<body>
 			<header>
-				<!-- <nav>
-					<ul>
-						<li><a href="#accueil">Accueil</a></li>
-						<li><a href="#description">Description</a></li>
-						<li><a href="#calendrier">Calendrier et tarifs</a></li>
-						<li><a href="#nous">A propos de nous</a></li>
-					</ul>
-				</nav> -->
-
-				 <!-- A grey horizontal navbar that becomes vertical on small screens -->
-				<nav class="navbar navbar-expand-sm bg-light">
-
-				  <!-- Links -->
-				  <ul class="navbar-nav">
-				    <li class="nav-item">
-				      <a class="nav-link" href="#photo_accueil">Skadi</a>
-				    </li>
-				  </ul>
-
+				 
+				 <!--A grey horizontal navbar that becomes vertical on small screens -->
+				<nav class="navbar fixed-top navbar-expand-sm bg-light">
+					<div class="container-fluid">
+					  	<a class="navbar-brand nav-link active" aria-current="page" href="#">Skadi</a>
+					  <ul class="nav navbar-nav d-flex">
+					  	<li class="nav-item"><a class="nav-link" href="#visite">Visiter</a></li>
+					  	<li class="nav-item"><a class="nav-link" href="#ecologie">Chalet écologique</a></li>
+					  	<li class="nav-item"><a class="nav-link" href="#calendrier">Tarifs</a></li>
+					  	<li class="nav-item"><a class="nav-link" href="#carte">Carte</a></li>
+					  	<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+					  </ul>
+				  	</div>
 				</nav> 
+				
 			</header>
 
 			<!--
@@ -39,6 +36,7 @@
 			-->
 
 			<section id="photo_accueil">
+				<div class="topleft">A SUPER-BESSE.<br>DANS LE MASSIF DU SANCY.<br><hr class="hr_titre">Un grand chalet écologique<br> et familial à quelques minutes<br>à pied ou en navette du<br>départ des pistes</div>
 				<a href="#visite" class="button">Visiter</a>
 			</section>
 
@@ -152,9 +150,12 @@
 				<div id="entrée">Entrée</div>
 			</section>
 
-			<section>
+
+
+			<section id="marge_gauche">
+				<hr>
 				<br>
-				<h2>Chalet écologique</h2>
+				<h2 id="ecologie">Chalet écologique</h2>
 						<p>Prendre soin de notre environnement nous a conduit à intégrer à nos travaux de rénovation 3 installations écologiques:<ul><li>un <em>puits canadien</em>, qui assure en été une ventilation fraîche bienvenue, et en hiver une protection contre le gel grâce à l'arrivée d'air venant de plusieurs mètres sous la terre.</li><li>des <em>toilettes sèches</em> de dernière génération Separett Villa 9000 qui économisent l'eau, cet or du XXIème siècle. Pour vous familiariser avec l'engin avant votre arrivée, vous pouvez aller voir <a href="https://www.separett.com/en-gb/our-products/toilets/urine-diverting-composting-toilets/urine-diverting-toilet-villa-9000" target="_blank"> le site officiel de Separett (en anglais)</a> pour voir des photos, ou celui d'<a href="https://www.ecohabitat.fr/toilettes-seches/71-toilettes-seches-separett-villa-9000.html" target="_blank">Ecohabitat</a>, avec vidéo et en francais.</li><li>2 <em>panneaux solaires</em> pour chauffer l'eau.</li></ul></p>
 				<hr>
 				<h2 id="calendrier">Tarifs</h2>
@@ -164,15 +165,20 @@
 				<h2 id="nous">Qui sommes-nous ?</h2>
 						<p>Parisiens d'origine, la vie nous a conduits à Chambéry, à Tours, à Boston (Etats-Unis), à Clermond-Ferrand, à <em>Super-Besse</em>, à Munich (Allemagne) puis à Versailles.</p><p> Lors de notre séjour clermontois, nous sommes très vite tombés amoureux de la région. Nous ignorions avant d'arriver dans cette belle ville, qu'il était possible d'y <em>skier tous les week-ends</em> en hiver, et de <em>randonner dans le parc des Volcans d'Auvergne</em> chaque été, avec tant de <em>promenades adaptées aux petits enfants</em>! L'homme de la famille ayant été chasseur alpin, nous avons décidé d'acheter notre 1ère maison à Super-Besse. Nous y revenons chaque année avec plaisir.</p> -->
 				<hr>
-				<h2>Contact</h2>
+
+				<h2 id="carte">Carte</h2>
+				<iframe id="frame" src="leaflet.html" height="400" width="100%" title="Carte"></iframe>
+				<hr>
+
+				<h2 id="contact">Contact</h2>
 						<span class="fas fa-phone-alt"> 07 83 78 96 02</span><br>
 						<br>
-						<p><i class="fas fa-envelope"> estelle.ballif@yahoo.com</i>
-						<a href="mailto:estelle.ballif@yahoo.com">Envoyez-moi un email !</a></p>
+						<p><i class="fas fa-envelope"> </i>
+						<a href="mailto:estelle.ballif@yahoo.com">estelle.ballif@yahoo.com</a></p>
 			</section>
 
 			<footer>
-				<p>Copyright Estelle, Marguerite et Xavier B. - Tous droits réservés </p>
+				<p>Copyright Estelle et Marguerite B. - Tous droits réservés </p>
 			</footer>
 	</body>
 </html>
